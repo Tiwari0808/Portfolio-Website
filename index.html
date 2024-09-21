@@ -15,7 +15,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <i class="fa-light fa-laptop-code"></i>
+                    <i class="fa-thin fa-laptop-code"></i>
                     <h3><span>D</span>ivyanshu</h3>
                 </div>
                 <ul>
@@ -49,16 +49,37 @@
                         websites that not only look great but also work smoothly. Let’s connect if you’re looking for
                         someone who’s passionate about web development and design!</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
+                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
+                            <li><span>JavaScript (ES6+)</span> - Interactivity, DOM manipulation, and logic.
+                            <li><span>Responsive Design</span> - Creating adaptable layouts for different devices</li>
+                            <li><span>Version Control (Git/GitHub)</span> - Collaboration and code management. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
+                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
+                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
+                            <li><span>JavaScript (ES6+)</span> - Interactivity, DOM manipulation, and logic.
+                        </ul>
+                    </div>
 
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

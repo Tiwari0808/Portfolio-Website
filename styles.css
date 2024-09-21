@@ -22,8 +22,8 @@ body {
     background-position: center;
     position: absolute;
     z-index: -1;
-    right:0;
-    bottom:0;
+    right: 0;
+    bottom: 0;
 }
 
 nav {
@@ -41,15 +41,11 @@ nav {
     font-weight: 100;
 }
 
-.logo h3 span{
+.logo h3 span {
     color: #ff004f;
 }
 
-.fa-light{
-    color: white;
-    font-size: 1.8rem;
-    /* display: none; */
-}
+.fa-laptop-code {}
 
 nav ul li {
     display: inline-block;
@@ -100,56 +96,56 @@ nav ul li a:hover::after {
 
 /* --------------About Section-------------- */
 
-#about{
+#about {
     padding: 2rem;
     color: #ababab;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
 }
 
-.about-col-2{
-flex-basis: 60%;
+.about-col-2 {
+    flex-basis: 60%;
 }
 
-.about-col-2 h1{
-color: white;
-font-size: 2rem;
-margin-bottom: 2%;
+.about-col-2 h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2%;
 }
 
-.about-col-2 p{
+.about-col-2 p {
     font-size: 0.8rem;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
     gap: 33%;
     margin-top: 4%;
 }
 
-.tab-links{
+.tab-links {
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0%;
     height: 1px;
@@ -160,10 +156,34 @@ margin-bottom: 2%;
     transition: 0.2s;
 }
 
-.tab-links:hover::after{
+.tab-links:hover::after {
     width: 100%;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
+}
+
+.tab-links.active-link.expand::after {
+    width: 100%;  /* Full width when class is added */
+}
+
+.tab-contents{
+    margin: 1.5rem 0 0 0;
+    line-height: 1.3rem;
+    display: none;
+}
+
+.tab-contents ul li{
+list-style: none;
+font-size: 0.6rem;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-weight: 600;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }
