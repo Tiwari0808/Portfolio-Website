@@ -12,7 +12,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
 }
 
 #background-img {
@@ -26,11 +26,15 @@ body {
     bottom: 0;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    /* position: fixed; */
+    width: 100%;
+    top: -0.4rem;
 }
 
 .logo {
@@ -44,8 +48,6 @@ nav {
 .logo h3 span {
     color: #ff004f;
 }
-
-.fa-laptop-code {}
 
 nav ul li {
     display: inline-block;
@@ -62,13 +64,14 @@ nav ul li a {
 nav ul li a::after {
     content: '';
     width: 0%;
-    height: 2px;
+    height: 1.5px;
     background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -0.3rem;
     transition: 0.3s;
 }
+
 
 nav ul li a:hover::after {
     width: 100%;
@@ -94,11 +97,19 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
+.sub-title{
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+    display: inline-block;
+}
+
 /* --------------About Section-------------- */
 
 #about {
-    padding: 2rem;
+    padding: 0 2rem;
     color: #ababab;
+    margin-top: 0;
 }
 
 .row {
@@ -123,14 +134,14 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 h1 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 2%;
+    
 }
 
 .about-col-2 p {
     font-size: 0.8rem;
 }
+
+
 
 .tab-titles {
     display: flex;
@@ -165,25 +176,120 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link.expand::after {
-    width: 100%;  /* Full width when class is added */
+    width: 100%;
+    /* Full width when class is added */
 }
 
-.tab-contents{
+.tab-contents {
     margin: 1.5rem 0 0 0;
     line-height: 1.3rem;
     display: none;
 }
 
-.tab-contents ul li{
-list-style: none;
-font-size: 0.6rem;
+.tab-contents ul li {
+    list-style: none;
+    font-size: 0.6rem;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #b54769;
     font-weight: 600;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
+}
+
+
+/* -------------services-------------- */
+
+#services{
+   padding: 2rem;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-right: 0.7rem;
+    border-radius: 5px;
+    transition: transform 0.5s, background 0.3s;
+    cursor: pointer;
+}
+
+.services-list div i{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.services-list div h2{
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.services-list div p{
+    font-size: 0.8rem;
+    color: #ababab;
+    margin-bottom: 0.7rem;
+}
+
+.services-list div a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.services-list div a:hover{
+   color: black;
+}
+
+.services-list div:hover{
+     background: #ff004f;
+     transform: translateY(-5px);
+}
+
+/* ---------------portfolio--------- */
+#portfolio{
+    padding: 0 0 0 2rem;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    margin-top:2rem ;
+    align-content: center;
+    justify-content: center;
+}
+
+.work{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.work:hover{
+    transform: translateY(-10px);
+}
+
+.work img{
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    transition: box-shadow 0.2s;
+}
+
+.work img:hover{
+    box-shadow:3px 5px 2px #ff004f;
 }
