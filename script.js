@@ -15,6 +15,20 @@ opentab = (tabname, event) => {
 
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
-    event.currentTarget.classList.add("expand");  // Add expand class for full width
+}
+
+let xMark = document.querySelector('.fa-solid');
+let menuIcon = document.querySelector('.fa-bars');
+let sidemenu = document.querySelector('#sidemenu');
+
+function openMenu(){
+sidemenu.style.right = '0';
+// console.log('open')
 
 }
+
+closeMenu =()=>{
+    sidemenu.style.right = '-40%';
+    // console.log('close')
+
+    }
