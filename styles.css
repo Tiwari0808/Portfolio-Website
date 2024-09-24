@@ -497,6 +497,8 @@ nav .fa-bars {
 
     .logo {
         font-weight: 300;
+        font-size: 1.3rem;
+        margin-top: 2rem;
     }
 
     #sidemenu .fa-xmark {
@@ -511,7 +513,8 @@ nav .fa-bars {
         display: block;
         position: absolute;
         right: 1.5rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        margin-top: 2rem;
     }
 
     /* -----------about-----------  */
@@ -531,8 +534,8 @@ nav .fa-bars {
     }
 
     .about-col-1 img {
-        width: 60%;
-        height: 45vh;
+        width: 35%;
+        height: 25vh;
     }
 
     .about-col-2 {
