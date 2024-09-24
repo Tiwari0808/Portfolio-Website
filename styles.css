@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: black;
     color: #fff;
@@ -23,9 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
     top: 0rem;
-    background: #262626;
     z-index: 9;
     margin-bottom: 1rem;
 }
@@ -101,9 +103,15 @@ nav ul li a:hover::after {
     font-size: 1.6rem;
     margin-bottom: 0.7rem;
     display: inline-block;
+} 
+
+.cta{
+    position: absolute;
+    left: 0px;
+    bottom: -5rem;
 }
 
-/* --------------About Section-------------- */
+ /* --------------About Section--------------  */
 
 #about {
     padding: 0 2rem;
@@ -122,7 +130,8 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 85%;
+    height: 90vh;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
@@ -175,7 +184,7 @@ nav ul li a:hover::after {
 
 .tab-links.active-link.expand::after {
     width: 100%;
-    /* Full width when class is added */
+    
 }
 
 .tab-contents {
@@ -339,6 +348,7 @@ nav ul li a:hover::after {
     text-align: center;
     color: white;
     transition: background-color 0.3s;
+    margin: 1rem auto;
 }
 
 .btn:hover {
@@ -348,7 +358,6 @@ nav ul li a:hover::after {
 /* -----------Contact--------- */
 
 #contact {
-    /* padding: 1rem 2rem; */
     position: relative;
 }
 
@@ -413,7 +422,6 @@ form textarea {
     padding: 0.5rem;
     margin: 0.5rem 0;
     color: #fff;
-    /* font-size: 1.1rem; */
     border-radius: 6px;
 }
 
@@ -506,7 +514,7 @@ nav .fa-bars {
         font-size: 1rem;
     }
 
-    /* -----------about----------- */
+    /* -----------about-----------  */
 
     .row {
         display: flex;
@@ -524,6 +532,7 @@ nav .fa-bars {
 
     .about-col-1 img {
         width: 60%;
+        height: 45vh;
     }
 
     .about-col-2 {
@@ -606,4 +615,28 @@ nav .fa-bars {
 
     }
 
+} 
+
+/* -----improved----- */
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
 }
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 1.5px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    transition: 0.3s;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+

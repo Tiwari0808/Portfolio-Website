@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Divyanshu Tiwari</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio of Divyanshu Tiwari, a Front-End Developer specializing in building responsive websites with modern web technologies.">
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Web Developer, Responsive Design, Portfolio">
+
     <script src="https://kit.fontawesome.com/29bcde1a0e.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+
+    <!-- Header Section -->
     <div id="header">
         <div class="header-container">
             <nav>
@@ -20,9 +23,9 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -31,119 +34,107 @@
                 <p class="header-desc1">Frontend Developer</p>
                 <h1>Hi, I'm <span>Divyanshu</span><br> from Pune, India.</h1>
                 <p class="header-desc2">"Crafting responsive and engaging websites <br> with modern web technologies."</p>
+                <!-- Call to Action Button -->
+                <a href="#portfolio" class="cta btn">View My Work</a>
             </div>
         </div>
     </div>
 
-    <!-- ----------------About Section----------- -->
-
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" class="userimg2">
+                    <img src="images/user2.jpeg" class="userimg2" alt="Profile Illustration">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I’m a front-end developer who loves creating visually appealing and user-friendly websites. With
-                        strong skills in HTML, CSS, and JavaScript, I enjoy turning design ideas into interactive web
-                        experiences. I’m always learning and staying up-to-date with the latest trends, aiming to build
-                        websites that not only look great but also work smoothly. Let’s connect if you’re looking for
-                        someone who’s passionate about web development and design!</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a front-end developer who loves creating visually appealing and user-friendly websites. With strong skills in HTML, CSS, and JavaScript, I enjoy turning design ideas into interactive web experiences. I’m always learning and staying up-to-date with the latest trends, aiming to build websites that not only look great but also work smoothly. Let’s connect if you’re looking for someone who’s passionate about web development and design!</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
-                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
-                            <li><span>JavaScript (ES6+)</span> - Interactivity, DOM manipulation, and logic.
-                            <li><span>Responsive Design</span> - Creating adaptable layouts for different devices</li>
-                            <li><span>Version Control (Git/GitHub)</span> - Collaboration and code management. </li>
+                            <li><span>CSS3</span> - Styling, layouts, and animations.</li>
+                            <li><span>JavaScript (ES6+)</span> - Interactivity, DOM manipulation, and logic.</li>
+                            <li><span>Responsive Design</span> - Creating adaptable layouts for different devices.</li>
+                            <li><span>Version Control (Git/GitHub)</span> - Collaboration and code management.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
-                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
+                            <li><span>Front-End Developer Intern</span> - XYZ Company (Jan 2023 - Present)</li>
+                            <li><span>Freelance Web Developer</span> - Upwork (2022 - Present)</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>HTML5</span> - Semantic markup and structure for web content.</li>
-                            <li><span>CSS3</span> - Styling, layouts, and animations. </li>
-                            <li><span>JavaScript (ES6+)</span> - Interactivity, DOM manipulation, and logic.
+                            <li><span>Bachelor of Technology in Computer Science</span> - ABC University (2019 - 2023)</li>
+                            <li><span>Web Development Bootcamp</span> - Udemy (2022)</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------services------------ -->
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias sint iste tempore
-                        blanditiis consequatur placeat quod porro dicta quasi?</p>
+                    <h2>Responsive Web Design</h2>
+                    <p>Creating websites that adapt to any device, providing an excellent user experience on mobile, tablet, and desktop.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Web design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias sint iste tempore
-                        blanditiis consequatur placeat quod porro dicta quasi?</p>
+                    <h2>Custom Front-End Development</h2>
+                    <p>Building fast, responsive, and custom user interfaces using the latest web technologies like HTML5, CSS3, and JavaScript.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-codepen"></i>
-                    <h2>Web design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias sint iste tempore
-                        blanditiis consequatur placeat quod porro dicta quasi?</p>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>UI/UX Design Integration</h2>
+                    <p>Translating beautiful designs into fully functional websites with a focus on user experience and interactivity.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- --------------------My Work /Portfolio------------------- -->
-
+    <!-- Portfolio Section -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">Portfolio</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png" alt="">
+                    <img src="images/work-1.png" alt="Project 1">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis a debitis eum
-                            suscipit saepe officiis non? Aspernatur, officiis corrupti.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>A social media platform built with React and Firebase, allowing users to connect and share content.</p>
+                        <a href="https://github.com/yourusername/project1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" alt="">
+                    <img src="images/work-2.png" alt="Project 2">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis a debitis eum
-                            suscipit saepe officiis non? Aspernatur, officiis corrupti.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my projects and skills, built with HTML, CSS, and JavaScript.</p>
+                        <a href="https://yourwebsite.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png" alt="">
+                    <img src="images/work-3.png" alt="Project 3">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis a debitis eum
-                            suscipit saepe officiis non? Aspernatur, officiis corrupti.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>E-commerce Store</h3>
+                        <p>An online store built with React and Node.js, featuring a shopping cart and payment integration.</p>
+                        <a href="https://github.com/yourusername/project3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -151,8 +142,7 @@
         </div>
     </div>
 
-    <!-- ---------------contact--------- -->
-
+    <!-- Contact Section -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -161,29 +151,34 @@
                     <p><i class="fa-solid fa-paper-plane"></i>Divyanshutiwari@gmail.com</p>
                     <p><i class="fa-solid fa-mobile-screen-button"></i>+91 9359780100</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-solid fa-envelope"></i></a>
-                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:Divyanshutiwari@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                     <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Email" required>
-                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <!-- Success and Error Messages -->
+                    <div class="form-response">
+                        <span class="success-message" style="color: rgb(8, 139, 8);"></span>
+                        <span class="error-message" style="color: rgb(203, 9, 9);"></span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © Divyanshu . Made with <i class="fa-solid fa-heart"></i> by Divyanshu Tiwari</p>
+            <p>Copyright © Divyanshu. Made with <i class="fa-solid fa-heart"></i> by Divyanshu Tiwari</p>
         </div>
     </div>
 
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
-
 </html>
